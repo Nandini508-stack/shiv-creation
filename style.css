@@ -1,0 +1,227 @@
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #f8b6c1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #6b3040;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #6b3040;
+}
+
+/* Navigation */
+nav {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b3040;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #d85b78;
+}
+
+/* Sections */
+section {
+    padding: 50px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #6b3040;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Product Card */
+.product {
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #6b3040;
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d85b78;
+}
+
+/* Button */
+.order-btn {
+    display: inline-block;
+    background: #d85b78;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #b9425e;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Footer */
+footer {
+    background: #6b3040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+.about {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.about h2 {
+    color: #6b3040;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 10px;
+}
+/* Category Navigation */
+nav a {
+    display: inline-block;
+    background: #fff0f3;
+    padding: 10px 18px;
+    border-radius: 25px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #d85b78;
+    color: white;
+    transform: translateY(-2px);
+}
+.contact {
+    text-align: center;
+    background: #fff0f3;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+
+.contact h2 {
+    color: #6b3040;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    opacity: 0.85;
+}
